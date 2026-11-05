@@ -68,3 +68,8 @@ main>section{scroll-margin-top:88px}
 #capitulo-ii .story-image{width:100%;max-width:360px;margin:0 auto}
 #capitulo-ii .story-image img{width:100%;height:auto;max-height:470px;object-fit:contain}
 @media(max-width:760px){#capitulo-ii .story-image{max-width:270px}#capitulo-ii .story-image img{max-height:360px}}
+
+/* Ilustración definitiva del primer encuentro */
+.chapter-one-image{width:100%;max-width:360px;margin:0 auto}
+.chapter-one-image img{display:block;width:100%;height:auto;max-height:470px;object-fit:contain;border:1px solid #e7d9dc;border-radius:8px;box-shadow:0 20px 55px #73566520;background:#fff}
+@media(max-width:760px){.chapter-one-image{max-width:270px}.chapter-one-image img{max-height:360px}}
