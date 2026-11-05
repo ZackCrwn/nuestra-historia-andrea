@@ -20,3 +20,24 @@ footer{padding:25px 7vw;border-top:1px solid #e7d8dc;display:flex;justify-conten
 .family-portrait img{display:block;width:100%;height:auto;border-radius:8px;box-shadow:0 24px 65px #73566524}
 .family-portrait figcaption{margin-top:17px;color:#a48c94;font:italic 14px "Playfair Display",serif}
 @media(max-width:760px){.family-section{padding-top:70px;padding-bottom:75px}.family-portrait{width:100%}}
+
+/* Libro digital: navegación y transiciones */
+html{scroll-padding-top:90px}
+body{padding-bottom:64px}
+main>section{scroll-margin-top:88px}
+.hero,.intro,.chapter,.family-section,.memorial,.interlude,.letter{animation:pageReveal .75s both}
+@keyframes pageReveal{from{opacity:.35;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.page-controls{position:fixed;z-index:20;bottom:14px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:22px;padding:8px 13px;border:1px solid #e7d6dc;border-radius:40px;background:#fbf6f1ed;box-shadow:0 8px 30px #5d435014;backdrop-filter:blur(12px)}
+.page-controls button{border:0;background:#bd8794;color:#fff;width:31px;height:31px;border-radius:50%;font-size:18px;cursor:pointer}
+.page-controls button:disabled{opacity:.35;cursor:default}
+.page-controls span{font-size:9px;letter-spacing:.15em;color:#987d87;min-width:100px;text-align:center}
+.memorial{max-width:760px;text-align:center;padding-top:95px;padding-bottom:100px}
+.memorial-star{font-size:64px;color:#c7a36b;text-shadow:0 0 28px #e9d5a6;margin:25px auto;animation:starGlow 3.5s ease-in-out infinite}
+@keyframes starGlow{50%{text-shadow:0 0 42px #e9d5a6;transform:scale(1.08)}}
+.memorial h2{font-size:clamp(38px,5vw,58px);line-height:1.15}
+.memorial>p:not(.eyebrow){max-width:570px;margin:24px auto;color:var(--muted);font:17px/2 "Playfair Display",serif}
+.memorial-note{font:italic 17px "Playfair Display",serif;color:#b18a66}
+.sound-toggle{cursor:pointer}
+.sound-toggle.is-selected{background:#bd8794;color:white}
+@media(max-width:760px){.topbar nav{gap:8px;max-width:72%;overflow-x:auto}.topbar nav a{white-space:nowrap}.page-controls{bottom:9px}.memorial{padding-top:65px;padding-bottom:70px}}
+@media(prefers-reduced-motion:reduce){.hero,.intro,.chapter,.family-section,.memorial,.interlude,.letter,.memorial-star{animation:none}}
