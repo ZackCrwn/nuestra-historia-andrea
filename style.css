@@ -94,3 +94,10 @@ main>section{scroll-margin-top:88px}
 #capitulo-iii .antonio-angel-image img{display:block;width:100%;height:auto;max-height:390px;object-fit:contain;border-radius:12px;box-shadow:0 18px 48px #73566518;background:#fff}
 #capitulo-iii .antonio-angel-image figcaption{margin-top:13px;color:var(--muted);font:italic 13px/1.6 "Playfair Display",serif}
 @media(max-width:760px){#capitulo-iii .antonio-angel-image{max-width:100%;margin:0 auto 34px}#capitulo-iii .antonio-angel-image img{max-height:300px}}
+
+/* Igualar tipografía del capítulo V con los capítulos narrativos */
+#capitulo-v .chapter-heading h2{font-family:"Playfair Display",serif;font-size:clamp(42px,5vw,65px);font-weight:500;line-height:1.12;letter-spacing:-.035em}
+#capitulo-v .story-text{font-family:"Playfair Display",serif;font-size:18px;line-height:1.95;font-weight:400;color:#63515a}
+#capitulo-v .story-text p{font-family:inherit;font-size:inherit;line-height:inherit}
+#capitulo-v .story-text .story-highlight{font-size:30px;line-height:1.5}
+@media(max-width:760px){#capitulo-v .chapter-heading h2{font-size:42px}#capitulo-v .story-text{font-size:17px;line-height:1.9}#capitulo-v .story-text .story-highlight{font-size:27px}}
