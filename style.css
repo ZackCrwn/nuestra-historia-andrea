@@ -41,3 +41,19 @@ main>section{scroll-margin-top:88px}
 .sound-toggle.is-selected{background:#bd8794;color:white}
 @media(max-width:760px){.topbar nav{gap:8px;max-width:72%;overflow-x:auto}.topbar nav a{white-space:nowrap}.page-controls{bottom:9px}.memorial{padding-top:65px;padding-bottom:70px}}
 @media(prefers-reduced-motion:reduce){.hero,.intro,.chapter,.family-section,.memorial,.interlude,.letter,.memorial-star{animation:none}}
+
+
+/* Dirección maestra: páginas de cuento y capítulos */
+:root{--sage:#aab39a;--warm-brown:#78645c;--paper:#fffaf4}
+.chapter-placeholder{position:relative;max-width:900px;min-height:440px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;border-top:1px solid #eadde0;border-bottom:1px solid #eadde0;background:linear-gradient(135deg,#fffaf5 0%,#f8eef0 52%,#f1edf4 100%);overflow:hidden}
+.chapter-placeholder:before,.chapter-placeholder:after{content:"✧";position:absolute;color:#c8a86d;opacity:.55;font-size:25px}
+.chapter-placeholder:before{top:38px;left:8%}.chapter-placeholder:after{right:8%;bottom:38px}
+.chapter-placeholder .chapter-number{font-size:54px;margin:4px 0 12px;color:#dfc6ce}
+.chapter-placeholder h2{font-size:clamp(38px,5vw,60px);line-height:1.12;margin:12px 0 20px;max-width:700px}
+.chapter-placeholder>p:not(.eyebrow){max-width:600px;color:var(--muted);font:17px/1.9 "Playfair Display",serif}
+.chapter-placeholder .placeholder-note{font:italic 13px "DM Sans",sans-serif;color:#a88d96;margin-top:22px}
+.page-turn-enter{animation:storybookTurn .72s cubic-bezier(.2,.72,.2,1) both;transform-origin:left center;backface-visibility:hidden}
+@keyframes storybookTurn{0%{opacity:.35;transform:perspective(1500px) rotateY(-8deg) translateX(24px)}100%{opacity:1;transform:perspective(1500px) rotateY(0) translateX(0)}}
+.topbar nav a{white-space:nowrap}
+@media(max-width:760px){.chapter-placeholder{min-height:390px}.chapter-placeholder h2{font-size:40px}.chapter-placeholder>p:not(.eyebrow){font-size:15px}.chapter-placeholder:before{top:20px}.chapter-placeholder:after{bottom:20px}}
+@media(prefers-reduced-motion:reduce){.page-turn-enter{animation:none}}
