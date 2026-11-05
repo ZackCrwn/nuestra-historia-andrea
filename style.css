@@ -57,3 +57,9 @@ main>section{scroll-margin-top:88px}
 .topbar nav a{white-space:nowrap}
 @media(max-width:760px){.chapter-placeholder{min-height:390px}.chapter-placeholder h2{font-size:40px}.chapter-placeholder>p:not(.eyebrow){font-size:15px}.chapter-placeholder:before{top:20px}.chapter-placeholder:after{bottom:20px}}
 @media(prefers-reduced-motion:reduce){.page-turn-enter{animation:none}}
+
+/* Ilustración del capítulo II */
+.story-image{margin:0;width:100%}
+.story-image img{display:block;width:100%;height:auto;border:1px solid #e7d9dc;border-radius:8px;box-shadow:0 20px 55px #73566520;background:#fff}
+.story-image figcaption{margin-top:14px;color:#a48c94;font:italic 14px/1.6 "Playfair Display",serif;text-align:center}
+@media(max-width:760px){.story-image{max-width:420px;margin:0 auto}}
