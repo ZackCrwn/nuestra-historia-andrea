@@ -1,7 +1,7 @@
 (() => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const sections = [...document.querySelectorAll('main>section')];
-  const names = ['PORTADA','ANTES DE LA HISTORIA','CAPÍTULO I','CAPÍTULO II','CAPÍTULO III · FAMILIA','CAPÍTULO IV','CAPÍTULO V','CAPÍTULO VI · ANTONIO','CAPÍTULO VII','EPÍLOGO','CIERRE'];
+  const names = ['PORTADA','ANTES DE LA HISTORIA','CAPÍTULO I','CAPÍTULO II','CAPÍTULO III · EL NIDITO','NUESTRA FAMILIA','CAPÍTULO IV · RECUERDOS','CAPÍTULO V · DÍAS DIFÍCILES','CAPÍTULO VI · ANTONIO','CAPÍTULO VII · SUEÑOS','INTERLUDIO','CARTA FINAL'];
   const label = document.getElementById('pageLabel');
   const prev = document.getElementById('previousPage');
   const next = document.getElementById('nextPage');
