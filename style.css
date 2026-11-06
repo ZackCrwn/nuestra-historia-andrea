@@ -318,3 +318,23 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
  .storybook-spread{grid-template-columns:1fr;gap:14px;width:min(100%,520px)}
  .storybook-spread .cover-image-link,.storybook-spread .cover-image,.andy-page-image{max-height:none}
 }
+
+/* Navegación más legible en escritorio */
+@media(min-width:701px){
+  .topbar{min-height:88px;padding-inline:clamp(28px,5vw,82px)}
+  .topbar nav{gap:clamp(22px,3vw,46px)}
+  .topbar nav a{font-size:13px;letter-spacing:.12em;padding:13px 0}
+  .wordmark{font-size:27px;gap:11px}
+  .sound-toggle{width:44px;height:44px;font-size:17px}
+  .page-controls{gap:16px;padding:10px 14px}
+  .page-controls button{width:40px;height:40px;font-size:18px}
+  .page-controls span{min-width:155px;font-size:10px;letter-spacing:.17em}
+}
+@media(min-width:701px) and (max-width:1100px){
+  .topbar nav{gap:18px}
+  .topbar nav a{font-size:12px}
+}
+@media(max-width:700px){
+  .topbar nav a{font-size:11px;letter-spacing:.09em}
+  .page-controls span{font-size:9px}
+}
