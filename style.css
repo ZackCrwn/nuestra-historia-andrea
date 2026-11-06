@@ -170,3 +170,18 @@ main>section{scroll-margin-top:88px}
 .page-icon,
 .inline-story-icon,
 .icon-sprite { display:none !important; }
+
+
+/* Hard stop: legacy floating decorative icons must never render */
+svg.page-icon,
+svg.inline-story-icon,
+svg.icon-sprite,
+.page-icon,
+.inline-story-icon,
+.icon-sprite {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+}
