@@ -347,11 +347,11 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
   object-fit:contain;
   filter:none;
 }
-@media(max-width:1100px) and (min-width:701px){
- .storybook-spread{grid-template-columns:minmax(0,1fr) minmax(0,1fr);width:100%;gap:18px}
+@media(max-width:1083px) and (min-width:701px){
+ .storybook-spread{grid-template-columns:1fr;width:min(100%,510px);gap:18px}
  .storybook-spread .cover-image-link,
  .storybook-spread .cover-image,
- .storybook-spread .andy-page-image{width:100%;max-width:510px}
+ .storybook-spread .andy-page-image{width:100%;max-width:100%}
 }
 @media(max-width:700px){
  .hero.hero-image-cover{min-height:0;padding:12px}
