@@ -499,3 +499,36 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
 @media(max-width:700px){
   .hero.hero-image-cover>.storybook-spread{width:min(100%,520px);margin-inline:auto}
 }
+
+/* Tamaño solicitado: cada página conserva el tamaño de la portada individual */
+@media(min-width:701px){
+  .hero.hero-image-cover{
+    display:flex !important;
+    min-height:calc(100svh - 79px) !important;
+    padding:18px 24px !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+  .hero.hero-image-cover>.storybook-spread{
+    display:grid !important;
+    grid-template-columns:510px 510px !important;
+    gap:24px !important;
+    width:1044px !important;
+    max-width:none !important;
+    height:auto !important;
+    margin:0 auto !important;
+    align-items:center !important;
+  }
+  .storybook-spread .cover-image-link,
+  .storybook-spread .cover-image,
+  .storybook-spread .andy-page-image{
+    display:block !important;
+    width:510px !important;
+    height:auto !important;
+    max-height:calc(100svh - 115px) !important;
+    object-fit:contain !important;
+    border:0 !important;
+    margin:0 !important;
+    filter:none !important;
+  }
+}
