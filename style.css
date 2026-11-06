@@ -108,21 +108,3 @@ main>section{scroll-margin-top:88px}
 
 
 
-
-/* Iconografía decorativa: nunca ocupa una línea ni altera el flujo del relato */
-.ornament-icon{position:absolute;z-index:2;display:block;width:38px;height:38px;margin:0;pointer-events:none;opacity:.9}
-.ornament-icon img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 2px 3px #73566518)}
-p:has(+ .ornament-icon),figcaption:has(+ .ornament-icon),.divider-heart:has(+ .ornament-icon),.memorial-note:has(+ .ornament-icon){position:relative}
-p:has(+ .ornament-icon)>.ornament-icon,figcaption:has(+ .ornament-icon)>.ornament-icon,.divider-heart:has(+ .ornament-icon)>.ornament-icon,.memorial-note:has(+ .ornament-icon)>.ornament-icon{top:50%;right:-48px;transform:translateY(-50%)}
-.ornament-cover{position:absolute;top:8%;left:10%;width:68px;height:68px}
-.ornament-cover-small{position:absolute;right:8%;bottom:8%;width:48px;height:48px}
-#familia .ornament-icon{width:34px;height:34px}
-#capitulo-v .ornament-icon{width:100px;height:22px}
-#capitulo-vii .ornament-icon{width:34px;height:34px}
-@media(max-width:760px){
- .ornament-icon{width:27px;height:27px;opacity:.78}
- p:has(+ .ornament-icon)>.ornament-icon,figcaption:has(+ .ornament-icon)>.ornament-icon,.divider-heart:has(+ .ornament-icon)>.ornament-icon,.memorial-note:has(+ .ornament-icon)>.ornament-icon{right:-13px}
- .ornament-cover{width:48px;height:48px;left:3%;top:5%}
- .ornament-cover-small{width:34px;height:34px;right:4%;bottom:5%}
- #capitulo-v .ornament-icon{width:74px;height:18px}
-}
