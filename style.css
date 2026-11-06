@@ -108,3 +108,25 @@ main>section{scroll-margin-top:88px}
 
 
 
+
+
+/* Iconos flat decorativos: color sólido, sin contorno, sombra ni brillo */
+.page-icon{position:absolute;z-index:1;width:30px;height:30px;color:#d9828b;fill:currentColor;opacity:.62;pointer-events:none}
+.icon-top-left{top:72px;left:8px}
+.icon-top-right{top:72px;right:8px}
+.icon-side-left{top:48%;left:5px;transform:translateY(-50%)}
+.icon-side-right{top:48%;right:5px;transform:translateY(-50%)}
+.icon-bottom-left{bottom:62px;left:12px}
+.icon-bottom-right{bottom:62px;right:12px}
+.intro,.chapter,.family-section,.memorial,.letter{position:relative}
+.family-section .page-icon{width:34px;height:34px}
+#capitulo-vii .page-icon{width:32px;height:32px}
+@media(max-width:760px){
+ .page-icon{width:23px;height:23px;opacity:.48}
+ .icon-top-left{top:42px;left:0}
+ .icon-top-right{top:42px;right:0}
+ .icon-side-left{left:0}
+ .icon-side-right{right:0}
+ .icon-bottom-left{bottom:40px;left:4px}
+ .icon-bottom-right{bottom:40px;right:4px}
+}
