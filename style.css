@@ -312,3 +312,73 @@ svg.icon-sprite,
   .story-text { font-size: 16px; line-height: 1.85; }
   .story-text p { margin-bottom: 1.25em; }
 }
+
+
+/* Transiciones editoriales discretas entre capítulos */
+.chapter.section-shell::before,
+.family-section.section-shell::before,
+.memorial.section-shell::before,
+.letter.section-shell::before {
+  content: "";
+  display: block;
+  width: 76px;
+  height: 1px;
+  margin: 0 auto 34px;
+  background: linear-gradient(90deg, transparent, #d8b9c3 25%, #c8a5b1 50%, #d8b9c3 75%, transparent);
+}
+.chapter.section-shell {
+  position: relative;
+}
+.chapter-ending {
+  max-width: 620px;
+  line-height: 1.45;
+}
+.next-chapter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  line-height: 1.8;
+}
+.next-chapter::before,
+.next-chapter::after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: #e2cbd2;
+}
+.divider-heart {
+  gap: 15px;
+}
+.divider-heart span {
+  max-width: 75px;
+}
+.interlude {
+  position: relative;
+}
+.interlude::before,
+.interlude::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 1px;
+  margin: 0 auto;
+  background: rgba(166, 111, 126, .35);
+}
+.interlude::after { margin-top: 28px; }
+@media (max-width: 760px) {
+  .chapter.section-shell::before,
+  .family-section.section-shell::before,
+  .memorial.section-shell::before,
+  .letter.section-shell::before {
+    margin-bottom: 27px;
+    width: 58px;
+  }
+  .next-chapter { gap: 8px; letter-spacing: .16em; }
+  .next-chapter::before,
+  .next-chapter::after { width: 14px; }
+  .chapter-ending { font-size: 23px; }
+  .interlude::after { margin-top: 22px; }
+}
