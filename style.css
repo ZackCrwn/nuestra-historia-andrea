@@ -368,3 +368,32 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
  .hero.hero-image-cover{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:1fr;justify-items:stretch;align-items:center}
  .hero.hero-image-cover>.storybook-spread{grid-column:1 / -1;grid-row:1;width:100%;max-width:1500px;margin-inline:auto}
 }
+
+/* Ajuste definitivo: las dos páginas deben medir exactamente lo mismo */
+@media(min-width:701px){
+ .hero.hero-image-cover{
+   display:flex!important;align-items:center!important;justify-content:center!important;
+   width:100vw!important;max-width:none!important;min-height:calc(100svh - 80px)!important;
+   margin:0!important;padding:22px 3vw 70px!important;box-sizing:border-box!important;
+ }
+ .hero.hero-image-cover>.storybook-spread{
+   display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+   align-items:center!important;justify-items:stretch!important;
+   width:100%!important;max-width:1500px!important;margin:0 auto!important;
+   gap:clamp(18px,2vw,32px)!important;
+ }
+ .storybook-spread .cover-image-link{
+   display:flex!important;align-items:center!important;justify-content:center!important;
+   width:100%!important;height:min(76svh,780px)!important;max-height:none!important;
+ }
+ .storybook-spread .cover-image,
+ .storybook-spread .andy-page-image{
+   display:block!important;width:100%!important;height:100%!important;
+   max-height:none!important;object-fit:contain!important;
+ }
+}
+@media(max-width:700px){
+ .hero.hero-image-cover>.storybook-spread{display:grid!important;grid-template-columns:1fr!important}
+ .storybook-spread .cover-image-link{height:auto!important}
+ .storybook-spread .cover-image,.storybook-spread .andy-page-image{width:100%!important;height:auto!important}
+}
