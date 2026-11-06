@@ -306,3 +306,15 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
  .hero.hero-image-cover{min-height:calc(100svh - 105px);padding:10px}
  .cover-image-link,.cover-image{max-height:calc(100svh - 135px)}
 }
+
+/* Apertura en doble página: portada + dedicatoria para Andy */
+.hero.hero-image-cover{padding:clamp(10px,2vw,28px);background:#eee5ed}
+.storybook-spread{width:min(100%,1390px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:clamp(12px,2vw,26px)}
+.storybook-spread .cover-image-link{width:100%;max-height:calc(100svh - 115px)}
+.storybook-spread .cover-image{max-height:calc(100svh - 115px)}
+.andy-page-image{display:block;width:100%;height:auto;max-height:calc(100svh - 115px);object-fit:contain;filter:drop-shadow(0 22px 35px rgba(67,48,67,.16))}
+@media(max-width:700px){
+ .hero.hero-image-cover{min-height:0;padding:12px}
+ .storybook-spread{grid-template-columns:1fr;gap:14px;width:min(100%,520px)}
+ .storybook-spread .cover-image-link,.storybook-spread .cover-image,.andy-page-image{max-height:none}
+}
