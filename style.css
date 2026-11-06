@@ -265,3 +265,50 @@ svg.icon-sprite,
   .hero h1 { font-size: clamp(41px, 11.5vw, 48px); }
   .page-controls { gap: 8px; }
 }
+
+
+/* Lectura móvil: navegación clara y ritmo editorial */
+@media (max-width: 760px) {
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(251, 246, 241, .96);
+    border-bottom: 1px solid #eadde0;
+    box-shadow: 0 5px 18px rgba(93, 67, 80, .045);
+  }
+  .topbar nav {
+    border-top: 1px solid #efe3e6;
+    scroll-snap-type: x proximity;
+    mask-image: linear-gradient(to right, #000 0%, #000 92%, transparent 100%);
+  }
+  .topbar nav a {
+    scroll-snap-align: start;
+    padding: 7px 0 5px;
+    color: #876d78;
+  }
+  .topbar nav a:active { color: #a66f7e; }
+  main section[id] { scroll-margin-top: 112px; }
+  .story-text {
+    max-width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    letter-spacing: .005em;
+  }
+  .story-text p { margin-bottom: 1.35em; }
+  .story-text .story-highlight {
+    margin-top: 1.55em !important;
+    margin-bottom: 1.55em !important;
+  }
+  .chapter-layout { gap: 30px; }
+  .chapter-heading { gap: 10px; }
+  .chapter-heading .eyebrow { line-height: 1.7; }
+  .image-caption { line-height: 1.6; padding: 0 10px; }
+  .divider-heart { margin: 30px 0; }
+}
+@media (max-width: 390px) {
+  main section[id] { scroll-margin-top: 105px; }
+  .story-text { font-size: 16px; line-height: 1.85; }
+  .story-text p { margin-bottom: 1.25em; }
+}
