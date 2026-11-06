@@ -397,3 +397,55 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
  .storybook-spread .cover-image-link{height:auto!important}
  .storybook-spread .cover-image,.storybook-spread .andy-page-image{width:100%!important;height:auto!important}
 }
+
+/* Ajuste definitivo de la doble página: tamaño real, sin marcos sobrantes */
+@media(min-width:701px){
+  .hero.hero-image-cover{
+    display:flex !important;
+    width:100vw !important;
+    max-width:none !important;
+    min-height:calc(100svh - 88px) !important;
+    height:calc(100svh - 88px) !important;
+    margin:0 !important;
+    padding:18px 2vw 26px !important;
+    align-items:center !important;
+    justify-content:center !important;
+    overflow:hidden !important;
+  }
+  .hero.hero-image-cover:before,
+  .hero.hero-image-cover:after{display:none !important}
+  .hero.hero-image-cover>.storybook-spread{
+    display:grid !important;
+    width:96vw !important;
+    max-width:1700px !important;
+    height:100% !important;
+    margin:0 auto !important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;
+    gap:2vw !important;
+    align-items:center !important;
+  }
+  .storybook-spread .cover-image-link{
+    display:flex !important;
+    width:100% !important;
+    height:100% !important;
+    max-height:none !important;
+    align-items:center !important;
+    justify-content:center !important;
+    filter:none !important;
+  }
+  .storybook-spread .cover-image,
+  .storybook-spread .andy-page-image{
+    display:block !important;
+    width:100% !important;
+    height:82vh !important;
+    max-height:none !important;
+    object-fit:contain !important;
+    border:0 !important;
+    margin:0 auto !important;
+    filter:drop-shadow(0 12px 20px rgba(67,48,67,.12)) !important;
+  }
+}
+@media(max-width:700px){
+ .hero.hero-image-cover:before,.hero.hero-image-cover:after{display:none}
+ .storybook-spread .cover-image{border:0}
+}
