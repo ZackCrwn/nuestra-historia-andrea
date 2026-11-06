@@ -532,3 +532,45 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
     filter:none !important;
   }
 }
+
+/* Corrección: no limitar la altura de las imágenes; conservar 510 × 680 aprox. */
+@media(min-width:701px){
+  .hero.hero-image-cover{
+    width:100% !important;
+    max-width:none !important;
+    min-height:calc(100svh - 79px) !important;
+    height:auto !important;
+    padding:18px 24px !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    overflow:visible !important;
+  }
+  .hero.hero-image-cover>.storybook-spread{
+    display:grid !important;
+    grid-template-columns:510px 510px !important;
+    gap:24px !important;
+    width:1044px !important;
+    max-width:none !important;
+    margin:0 auto !important;
+    align-items:center !important;
+    justify-content:center !important;
+  }
+  .storybook-spread .cover-image-link{
+    width:510px !important;
+    height:auto !important;
+    max-height:none !important;
+    display:block !important;
+  }
+  .storybook-spread .cover-image,
+  .storybook-spread .andy-page-image{
+    width:510px !important;
+    height:auto !important;
+    max-width:none !important;
+    max-height:none !important;
+    object-fit:unset !important;
+    display:block !important;
+    margin:0 !important;
+    border:0 !important;
+  }
+}
