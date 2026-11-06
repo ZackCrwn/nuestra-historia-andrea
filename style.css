@@ -362,3 +362,9 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
  .storybook-spread .cover-image-link{width:100%;max-height:none}
  .storybook-spread .cover-image,.storybook-spread .andy-page-image{display:block;width:100%;height:min(86svh,900px);max-height:none;object-fit:contain}
 }
+
+/* FIX: el contenedor de doble página debe ocupar las dos columnas del hero heredado */
+@media(min-width:701px){
+ .hero.hero-image-cover{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:1fr;justify-items:stretch;align-items:center}
+ .hero.hero-image-cover>.storybook-spread{grid-column:1 / -1;grid-row:1;width:100%;max-width:1500px;margin-inline:auto}
+}
