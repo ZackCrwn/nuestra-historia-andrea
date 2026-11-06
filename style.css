@@ -449,3 +449,53 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
  .hero.hero-image-cover:before,.hero.hero-image-cover:after{display:none}
  .storybook-spread .cover-image{border:0}
 }
+
+/* Mantener el tamaño original de la portada y colocar la dedicatoria a su lado */
+@media(min-width:701px){
+  .hero.hero-image-cover{
+    display:flex !important;
+    width:100% !important;
+    max-width:none !important;
+    min-height:calc(100svh - 79px) !important;
+    height:auto !important;
+    margin:0 !important;
+    padding:18px 20px !important;
+    align-items:center !important;
+    justify-content:center !important;
+    overflow:hidden !important;
+  }
+  .hero.hero-image-cover:before,
+  .hero.hero-image-cover:after{display:none !important}
+  .hero.hero-image-cover>.storybook-spread{
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    align-items:center !important;
+    justify-items:center !important;
+    gap:24px !important;
+    width:min(100%,1038px) !important;
+    max-width:1038px !important;
+    height:auto !important;
+    margin:0 auto !important;
+  }
+  .storybook-spread .cover-image-link{
+    display:block !important;
+    width:100% !important;
+    max-height:none !important;
+    height:auto !important;
+    filter:none !important;
+  }
+  .storybook-spread .cover-image,
+  .storybook-spread .andy-page-image{
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+    max-height:calc(100svh - 115px) !important;
+    object-fit:contain !important;
+    border:0 !important;
+    margin:0 !important;
+    filter:none !important;
+  }
+}
+@media(max-width:700px){
+  .hero.hero-image-cover>.storybook-spread{width:min(100%,520px);margin-inline:auto}
+}
