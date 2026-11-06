@@ -164,3 +164,9 @@ main>section{scroll-margin-top:88px}
 .page-icon{display:none!important}
 .inline-story-icon{display:inline-block;width:19px;height:19px;margin-left:9px;vertical-align:middle;color:#c9828e;fill:currentColor;opacity:.72}
 @media(max-width:760px){.inline-story-icon{width:15px;height:15px;margin-left:6px}}
+
+
+/* Neutralizar cualquier icono decorativo antiguo o residual */
+.page-icon,
+.inline-story-icon,
+.icon-sprite { display:none !important; }
