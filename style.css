@@ -130,3 +130,9 @@ main>section{scroll-margin-top:88px}
  .icon-bottom-left{bottom:40px;left:4px}
  .icon-bottom-right{bottom:40px;right:4px}
 }
+
+/* Corrección: sprite SVG embebido en el documento para asegurar su renderizado */
+.icon-sprite{position:absolute;width:0;height:0;overflow:hidden}
+.page-icon{display:block;visibility:visible!important;opacity:.78!important;z-index:20!important;overflow:visible;color:#c97886}
+.page-icon use{fill:currentColor}
+.intro,.chapter,.family-section,.memorial,.letter{overflow:visible}
