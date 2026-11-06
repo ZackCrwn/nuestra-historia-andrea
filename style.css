@@ -101,3 +101,13 @@ main>section{scroll-margin-top:88px}
 #capitulo-v .story-text p{font-family:inherit;font-size:inherit;line-height:inherit}
 #capitulo-v .story-text .story-highlight{font-size:30px;line-height:1.5}
 @media(max-width:760px){#capitulo-v .chapter-heading h2{font-size:42px}#capitulo-v .story-text{font-size:17px;line-height:1.9}#capitulo-v .story-text .story-highlight{font-size:27px}}
+
+
+/* Adornos ilustrados del libro: pequeños detalles al cierre de cada capítulo */
+.story-ornaments{display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,34px);flex-wrap:wrap;width:100%;margin:48px auto 8px;padding:18px 10px;border-top:1px solid #eadde0}
+.story-ornaments img{display:block;width:auto;height:auto;max-width:clamp(48px,8vw,92px);max-height:clamp(48px,8vw,92px);object-fit:contain;opacity:.9;filter:drop-shadow(0 5px 9px #73566512)}
+#inicio .story-ornaments{border-top:0;margin-top:18px}
+#familia .story-ornaments img:first-child{max-width:clamp(100px,17vw,180px);max-height:120px}
+#capitulo-vii .story-ornaments img{max-width:clamp(45px,7vw,78px);max-height:78px}
+@media(max-width:760px){.story-ornaments{gap:12px;margin-top:30px;padding:14px 4px}.story-ornaments img{max-width:58px;max-height:58px}#familia .story-ornaments img:first-child{max-width:105px;max-height:75px}}
+@media(prefers-reduced-motion:reduce){.story-ornaments img{filter:none}}
