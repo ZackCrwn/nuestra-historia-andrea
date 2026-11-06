@@ -3,33 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8eef0">
+  <meta name="theme-color" content="#F7F0E7">
   <meta name="description" content="Un pequeño libro digital que cuenta nuestra historia.">
   <title>Nuestra historia — Isaac & Andrea</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=full-interface-20261106">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=storybook-redesign-20261107">
 </head>
 <body>
 <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
   <header class="topbar">
-    <a class="wordmark" href="#inicio">I <span>✦</span> A</a>
-    <nav aria-label="Navegación principal">
-      <a href="#historia">Nuestra historia</a>
-      <a href="#capitulos">Capítulos</a>
-      <a href="#capitulo-ii">Cap. II</a><a href="#capitulo-iii">Cap. III</a><a href="#familia">Familia</a><a href="#capitulo-iv">Cap. IV</a><a href="#capitulo-v">Cap. V</a><a href="#antonio">Antonio</a><a href="#capitulo-vii">Sueños</a>
+    <a class="wordmark" href="#inicio" aria-label="Volver a la portada"><span class="wordmark-initial">I</span><span class="wordmark-flower">✿</span><span class="wordmark-initial">A</span></a>
+    <nav aria-label="Navegación del libro">
+      <a href="#historia">Prólogo</a><a href="#capitulos">Capítulos</a><a href="#familia">Familia</a><a href="#antonio">Antonio</a><a href="#capitulo-vii">Sueños</a><a href="#carta">La carta</a>
     </nav>
     <button class="sound-toggle" id="soundToggle" type="button" aria-label="Activar ambiente sonoro" title="Ambiente sonoro">♫</button>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
+    <section class="hero" id="inicio" aria-label="Portada de Nuestra historia">
 <div class="hero-copy">
-        <p class="eyebrow"><span class="sparkle">✧</span> UN LIBRO QUE SIGUE ESCRIBIÉNDOSE <span class="sparkle">✧</span></p>
+        <p class="eyebrow"><span class="sparkle">✿</span> UN LIBRO QUE SIGUE ESCRIBIÉNDOSE <span class="sparkle">✿</span></p>
         <h1>Había una vez…<br><em>nosotros.</em></h1>
         <p class="hero-subtitle">Hay encuentros que parecen pequeños accidentes del destino. Y hay personas que, sin saberlo, cambian el rumbo de toda una historia.</p>
-        <a class="primary-link" href="#capitulos">Abrir el libro <span>↓</span></a>
+        <a class="primary-link" href="#historia">Abrir nuestra historia <span>↓</span></a>
       </div>
       <div class="hero-art" aria-label="Ilustración decorativa de flores">
         
@@ -44,7 +43,7 @@
         <span class="floating-star star-c">✧</span><span class="tiny-note">para ti,<br>siempre</span>
         
       </div>
-      <div class="hero-bottom"><span>ISAAC & ANDREA</span><span>DESDE EL PRIMER CAPÍTULO</span><span>♡</span></div>
+      <div class="hero-bottom"><span>ISAAC & ANDREA</span><span>DESDE EL PRIMER CAPÍTULO</span><span>✿</span></div>
 </section>
 
     <section class="intro section-shell" id="historia">
