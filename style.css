@@ -338,3 +338,19 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:26px clamp(24
   .topbar nav a{font-size:11px;letter-spacing:.09em}
   .page-controls span{font-size:9px}
 }
+
+/* Doble página: ocupar el espacio disponible, sin miniaturas */
+.hero.hero-image-cover{width:100%;max-width:none;min-height:calc(100svh - 79px);padding:14px 22px}
+.storybook-spread{width:100%;max-width:1320px;margin-inline:auto;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(18px,2.4vw,36px)}
+.storybook-spread .cover-image-link{width:100%;max-height:none}
+.storybook-spread .cover-image{width:100%;height:min(78svh,820px);max-height:none;object-fit:contain}
+.storybook-spread .andy-page-image{width:100%;height:min(78svh,820px);max-height:none;object-fit:contain}
+@media(min-width:701px){
+ .storybook-spread{max-width:1450px;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr)}
+}
+@media(max-width:700px){
+ .hero.hero-image-cover{min-height:0;padding:12px}
+ .storybook-spread{width:min(100%,560px);grid-template-columns:1fr;gap:12px}
+ .storybook-spread .cover-image{height:auto;max-height:none}
+ .storybook-spread .andy-page-image{height:auto;max-height:none}
+}
