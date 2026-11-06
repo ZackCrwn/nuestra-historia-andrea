@@ -136,3 +136,25 @@ main>section{scroll-margin-top:88px}
 .page-icon{display:block;visibility:visible!important;opacity:.78!important;z-index:20!important;overflow:visible;color:#c97886}
 .page-icon use{fill:currentColor}
 .intro,.chapter,.family-section,.memorial,.letter{overflow:visible}
+
+
+/* Ajuste fino: iconos pequeños, como acentos editoriales */
+.page-icon{
+  width:16px!important;
+  height:16px!important;
+  opacity:.48!important;
+}
+.family-section .page-icon,
+#capitulo-vii .page-icon{
+  width:18px!important;
+  height:18px!important;
+}
+@media(max-width:760px){
+  .page-icon,
+  .family-section .page-icon,
+  #capitulo-vii .page-icon{
+    width:12px!important;
+    height:12px!important;
+    opacity:.42!important;
+  }
+}
